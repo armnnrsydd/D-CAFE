@@ -766,3 +766,612 @@ body {
         gap: 5px;
     }
 }
+
+
+
+/* =========================================
+   RESPONSIVE UPGRADE - D'CAFE
+   Desktop | Laptop | Tablet | Mobile
+========================================= */
+
+
+/* GLOBAL RESPONSIVE */
+
+img {
+    max-width: 100%;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* =========================================
+   LARGE DESKTOP (1440px AND ABOVE)
+========================================= */
+
+@media (min-width: 1440px) {
+
+    .hero-content {
+        margin-left: 12%;
+    }
+
+    .features {
+        gap: 70px;
+    }
+
+    .card {
+        width: min(100%, 450px);
+    }
+
+    .about-description {
+        max-width: 850px;
+    }
+
+}
+
+
+/* =========================================
+   LAPTOP (1024px - 1439px)
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar-list a {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .hero-content {
+        margin-left: 8%;
+        max-width: 650px;
+    }
+
+    .features {
+        gap: 35px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .card {
+        width: min(45%, 400px);
+    }
+
+    .about {
+        padding: 100px 7%;
+    }
+
+    .about h1 {
+        font-size: clamp(45px, 5vw, 65px);
+    }
+
+    .about-description {
+        max-width: 750px;
+    }
+
+}
+
+.about-subtitle {
+    color: #c58b5b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   TABLET (769px - 1024px)
+========================================= */
+
+@media (max-width: 1024px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 80px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .navbar-list a {
+        padding: 12px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .nav-btn {
+        padding: 11px 16px;
+        font-size: 10px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 85vh;
+        min-height: 85svh;
+        background-position: 60% center;
+    }
+
+    .hero-content {
+        max-width: 580px;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(55px, 8vw, 80px);
+    }
+
+
+    /* MENU */
+
+    .features-title {
+        padding: 90px 20px 35px;
+    }
+
+    .features-title h1 {
+        font-size: clamp(40px, 6vw, 55px);
+    }
+
+    .features {
+        min-height: auto;
+        gap: 25px;
+        padding: 50px 5%;
+    }
+
+    .card {
+        width: calc(50% - 15px);
+    }
+
+    .card-img {
+        height: 260px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        min-height: auto;
+        padding: 110px 8%;
+    }
+
+    .about h1 {
+        padding-top: 0;
+        font-size: 50px;
+    }
+
+    .about-description {
+        padding-top: 0;
+        margin: 35px auto 0;
+        font-size: 17px;
+        line-height: 1.9;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        min-height: auto;
+        padding: 90px 25px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE & SMALL TABLET (MAX 768px)
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        height: auto;
+        min-height: 75px;
+        padding: 15px 5%;
+
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .navbar-list {
+        order: 3;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 5px;
+    }
+
+    .navbar-list a {
+        padding: 9px 12px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 90svh;
+        background-position: 60% center;
+    }
+
+    .hero-content {
+        margin: 125px 7% 80px;
+        max-width: 550px;
+    }
+
+    .hero-subtitle {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(48px, 9vw, 70px);
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        max-width: 430px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .hero-buttons {
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .hero-bottom {
+        bottom: 20px;
+        font-size: 8px;
+    }
+
+
+    /* MENU */
+
+    .features-title {
+        padding: 75px 20px 30px;
+    }
+
+    .features-title h1 {
+        font-size: clamp(38px, 7vw, 48px);
+    }
+
+    .features {
+        min-height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+        padding: 35px 7% 75px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .card-img {
+        height: clamp(220px, 45vw, 320px);
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        min-height: auto;
+        padding: 90px 7%;
+    }
+
+    .about h1 {
+        font-size: clamp(38px, 7vw, 50px);
+        letter-spacing: 2px;
+    }
+
+    .about-description {
+        max-width: 600px;
+        font-size: 15px;
+        line-height: 1.9;
+        margin-top: 25px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        min-height: auto;
+        padding: 75px 7%;
+    }
+
+    .contact h1 {
+        font-size: clamp(38px, 7vw, 50px);
+    }
+
+    .contact-heading p {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .contact-heading span {
+        font-size: 13px;
+    }
+
+    .contact-container {
+        width: 100%;
+        max-width: 500px;
+        padding: 30px 25px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 50px 7% 25px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .footer-links,
+    .footer-socials {
+        gap: 18px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE (MAX 480px)
+========================================= */
+
+@media (max-width: 480px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        padding: 13px 4%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .navbar-list {
+        gap: 0;
+    }
+
+    .navbar-list a {
+        padding: 9px 10px;
+        font-size: 9px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 90svh;
+        background-position: 62% center;
+    }
+
+    .hero-overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(15, 10, 7, 0.92),
+            rgba(15, 10, 7, 0.65)
+        );
+    }
+
+    .hero-content {
+        margin: 125px 6% 90px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(43px, 12vw, 55px);
+        line-height: 1.15;
+    }
+
+    .hero-subtitle {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+
+    .hero-btn {
+        padding: 14px 19px;
+        font-size: 10px;
+        gap: 15px;
+    }
+
+    .secondary-btn {
+        font-size: 10px;
+    }
+
+    .hero-bottom {
+        left: 6%;
+        right: 6%;
+        font-size: 7px;
+        letter-spacing: 0.5px;
+    }
+
+
+    /* MENU */
+
+    .features-title h1 {
+        font-size: 37px;
+    }
+
+    .features-title p {
+        font-size: 12px;
+    }
+
+    .features {
+        padding: 30px 6% 60px;
+    }
+
+    .card-img {
+        height: 220px;
+    }
+
+    .card-btn {
+        width: 85%;
+        padding: 13px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        padding: 75px 7%;
+    }
+
+    .about h1 {
+        font-size: 37px;
+    }
+
+    .about-description {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        padding: 70px 6%;
+    }
+
+    .contact h1 {
+        font-size: 36px;
+    }
+
+    .contact-heading p {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .contact-heading span {
+        font-size: 12px;
+    }
+
+    .contact-container {
+        margin-top: 35px;
+        padding: 23px 18px;
+        gap: 18px;
+    }
+
+    .input-group label {
+        font-size: 12px;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        padding: 13px;
+        font-size: 13px;
+    }
+
+    .ctc-btn {
+        padding: 14px;
+        font-size: 11px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        padding: 45px 6% 25px;
+    }
+
+    .footer-brand h2 {
+        font-size: 30px;
+    }
+
+    .footer-links,
+    .footer-socials {
+        gap: 15px;
+    }
+
+    .footer a {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE (MAX 360px)
+========================================= */
+
+@media (max-width: 360px) {
+
+    .navbar-list a {
+        padding: 8px;
+        font-size: 8px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-bottom {
+        font-size: 6px;
+    }
+
+    .hero-btn {
+        padding: 12px 14px;
+    }
+
+    .features-title h1 {
+        font-size: 32px;
+    }
+
+    .contact-container {
+        padding: 20px 15px;
+    }
+
+}
