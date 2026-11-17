@@ -1375,3 +1375,88 @@ section {
     }
 
 }
+
+
+
+/* =================================
+   FIX IPHONE HORIZONTAL OVERFLOW
+================================= */
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Prevent flex items from expanding */
+.navbar,
+.navbar-list,
+.hero-content,
+.hero-buttons,
+.features,
+.card,
+.about,
+.contact,
+.contact-container,
+.footer,
+.footer-content,
+.footer-bottom {
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* Mobile navbar */
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .navbar-list {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .features {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .contact-container {
+        width: 100%;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+}
