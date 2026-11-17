@@ -1,0 +1,304 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #17110d;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    height: 90px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    background: rgba(30, 19, 12, 0.65);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+
+/* LOGO */
+
+.logo {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #c58b5b;
+}
+
+
+/* NAVIGATION */
+
+.navbar-list {
+    display: flex;
+    align-items: center;
+    /* gap: 40px; */
+}
+
+.navbar-list a {
+    color: #e7ddd4;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 20px;
+
+    transition: 0.3s ease;
+}
+
+.navbar-list a:hover {
+    background-color: #c58b5b;
+}
+
+
+/* NAV BUTTON */
+
+.nav-btn {
+    padding: 13px 25px;
+
+    border: 1px solid #c58b5b;
+    border-radius: 3px;
+
+    color: #c58b5b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #c58b5b;
+    color: #21150e;
+}
+
+
+
+/* ================= COFFEE MENU ================= */
+
+.menu {
+    min-height: 100vh;
+    padding: 150px 7% 100px;
+
+    background: #221105;
+}
+
+
+/* MENU HEADING */
+
+.menu-heading {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.menu-heading > p {
+    color: #c58b5b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 18px;
+}
+
+.menu-heading h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 6vw, 70px);
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.menu-heading h1 span {
+    color: #c58b5b;
+}
+
+.heading-line {
+    width: 65px;
+    height: 2px;
+    background: #c58b5b;
+    margin: 25px auto;
+}
+
+.menu-heading h3 {
+    color: #a99a8e;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+/* MENU GRID */
+
+.menu-container {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+}
+
+
+/* COFFEE CARD */
+
+.coffee-card {
+    background: #302016;
+    overflow: hidden;
+
+    border: 1px solid rgba(197, 139, 91, 0.15);
+
+    transition: 0.4s ease;
+}
+
+.coffee-card:hover {
+    transform: translateY(-8px);
+    border-color: #c58b5b;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+
+/* COFFEE IMAGE */
+
+.coffee-card img {
+    width: 100%;
+    height: 220px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.coffee-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* COFFEE INFORMATION */
+
+.coffee-info {
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.coffee-info h2 {
+    color: #f4e9df;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.coffee-info p {
+    color: #a99a8e;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 12px 0 20px;
+}
+
+
+/* EXPLORE BUTTON */
+
+.coffee-info button {
+    width: 100%;
+    padding: 12px;
+
+    background: transparent;
+    border: 1px solid #a96f43;
+
+    color: #c58b5b;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.coffee-info button:hover {
+    background: #a96f43;
+    color: white;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .menu-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .menu {
+        padding: 130px 5% 70px;
+    }
+
+    .menu-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .coffee-card img {
+        height: 170px;
+    }
+
+    .coffee-info {
+        padding: 18px 12px;
+    }
+
+    .coffee-info h2 {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .coffee-card img {
+        height: 230px;
+    }
+
+}
