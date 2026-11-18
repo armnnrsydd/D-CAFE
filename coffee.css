@@ -677,3 +677,84 @@ img {
         font-size: 10px;
     }
 }
+
+/* =================================
+   NAVBAR RESPONSIVE - SAME AS INDEX
+================================= */
+
+/* TABLET & MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        min-height: 75px;
+
+        padding: 15px 5%;
+
+        flex-wrap: wrap;
+        row-gap: 12px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .navbar-list {
+        order: 3;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        gap: 5px;
+    }
+
+    .navbar-list a {
+        padding: 9px 12px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 13px 4%;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .navbar-list {
+        gap: 0;
+    }
+
+    .navbar-list a {
+        padding: 9px 10px;
+        font-size: 9px;
+    }
+
+}
+
+
+/* VERY SMALL MOBILE */
+
+@media (max-width: 360px) {
+
+    .navbar-list a {
+        padding: 8px;
+        font-size: 8px;
+    }
+
+}
